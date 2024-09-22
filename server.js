@@ -2,7 +2,7 @@ const WebSocket = require('ws');
 const mongoose = require('mongoose');
 
 // Cadena de conexión corregida
-const MONGODB_URI = 'mongodb://krilancelo2018:daitan33@cluster0-shard-00-00.viq91.mongodb.net:27017,cluster0-shard-00-01.viq91.mongodb.net:27017,cluster0-shard-00-02.viq91.mongodb.net:27017/trips?ssl=true&replicaSet=atlas-12345-shard-0&authSource=admin&retryWrites=true&w=majority';
+const mongoUri = process.env.MONGODB_URI || 'mongodb+srv://krilancelo2018:daitan33@cluster0.viq91.mongodb.net/trips?retryWrites=true&w=majority';
 
 // Conectar a MongoDB
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
