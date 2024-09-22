@@ -1,0 +1,13 @@
+{
+  "name": "websocket-server",
+  "version": "1.0.0",
+  "description": "Servidor WebSocket con MongoDB en Render",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ws": "^7.4.6",
+    "mongoose": "^5.12.3"
+  }
+}
